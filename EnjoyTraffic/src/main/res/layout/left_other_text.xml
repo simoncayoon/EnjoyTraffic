@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/iv_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/default_portrait"
+            android:cropToPadding="false"
+            android:padding="8dp"
+            android:layout_margin="8dip"/>
+
+    <Button
+            android:maxWidth="280dp"
+            android:minHeight="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_left_text"
+            android:layout_alignTop="@+id/iv_icon"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:background="@drawable/other_popo"
+            android:singleLine="false"
+            android:focusable="false"
+            android:textSize="20dp"
+            android:gravity="center_vertical"/>
+
+</RelativeLayout>
