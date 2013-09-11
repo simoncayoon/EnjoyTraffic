@@ -81,7 +81,6 @@ public class CustomAdapter extends BaseAdapter
         ViewHolder holder = null;
         if(convertView == null){
 
-            Log.d("test__", "稍后执行");
             holder = new ViewHolder();
             switch (type) {
                 case VALUE_LEFT_TEXT:
@@ -105,9 +104,9 @@ public class CustomAdapter extends BaseAdapter
             }
             convertView.setTag(holder);
         }else{
-            Log.d("test__", "首先执行");
             holder = (ViewHolder)convertView.getTag();
         }
+
         return convertView;
     }
 
